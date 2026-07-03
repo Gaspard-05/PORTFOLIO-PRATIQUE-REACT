@@ -3,6 +3,7 @@ import Cta from "../components/Cta";
 import MyStory from "../components/MyStory";
 import MyStory2 from "../components/MyStory2";
 import MyProject from "../components/MyProject";
+import MyStoryimg from "../assets/img/icon-story.png";
 const Intro = () => {
 
   const mystory2 = [
@@ -91,7 +92,7 @@ const Intro = () => {
 
       <div className="pb-16 lg:pb-20">
         <div className="flex items-center pb-6">
-          <img src="/src/assets/img/icon-story.png" alt="icon story" />
+          <img src={MyStoryimg} alt="icon story" />
           <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
             MY PROJECTS
           </h3>
