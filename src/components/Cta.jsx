@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Cta = ({titre, projects, contactButton, myContact}) => {
   return (
     <>
-      <section className="px-2 pt-6 pb-10 sm:px-6 sm:pt-8 sm:pb-16 lg:px-8 lg:pt-12 lg:pb-24 xl:px-0">
+      <section className="px-2 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10 xl:px-0">
         <div className="mx-auto max-w-7xl overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-xl backdrop-blur-sm sm:rounded-3xl">
           <div className="px-6 py-10 text-center sm:px-10 sm:py-14 lg:px-14 lg:py-16">
             <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">

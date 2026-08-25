@@ -90,23 +90,25 @@ const Intro = () => {
         />
       ))}
 
-      <div className="pb-16 lg:pb-20">
-        <div className="flex items-center pb-6">
-          <img src={MyStoryimg} alt="icon story" />
-          <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
-            MY PROJECTS
-          </h3>
+      <section className="px-2 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10 xl:px-0">
+        <div className="mx-auto max-w-7xl overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl backdrop-blur-sm sm:rounded-3xl sm:p-10 lg:p-14">
+          <div className="flex items-center gap-3 pb-6">
+            <img src={MyStoryimg} alt="icon story" />
+            <h3 className="font-body text-2xl font-semibold text-white">
+              MY PROJECTS
+            </h3>
+          </div>
+          <div>
+            {myprojects.map((project, index) => (
+              <MyProject
+                key={index}
+                titre={project.titre}
+                description={project.description}
+              />
+            ))}
+          </div>
         </div>
-        <div>
-          {myprojects.map((project, index) => (
-            <MyProject
-              key={index}
-              titre={project.titre}
-              description={project.description}
-            />
-          ))}
-        </div>
-      </div>
+      </section>
 
       
     </>
