@@ -3,35 +3,34 @@ import { Link } from "react-router-dom";
 const Cta = ({titre, projects, contactButton, myContact}) => {
   return (
     <>
-      <section className="py-10 bg-gray-100 sm:py-16 lg:py-24 rounded ">
-        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+      <section className="px-2 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
+        <div className="mx-auto max-w-6xl overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-xl backdrop-blur-sm sm:rounded-3xl">
+          <div className="px-6 py-10 text-center sm:px-10 sm:py-14 lg:px-14 lg:py-16">
+            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
               {titre}
             </h2>
-            <p className="mt-4 text-2xl font-medium">
+            <p className="mt-4 text-xl font-medium text-gray-300 sm:text-2xl">
               {projects}
             </p>
 
-            <div className="flex flex-col items-center justify-center px-16 mt-8 space-y-4 sm:space-y-0 sm:space-x-4 sm:flex-row lg:mt-12 sm:px-0">
+            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row lg:mt-12">
               <Link
                 to="#"
                 title=""
-                className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md sm:w-auto hover:bg-blue-700 focus:bg-blue-700"
+                className="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-indigo-700 focus:bg-indigo-700 sm:w-auto"
                 role="button"
               >
-                
                 {contactButton}
               </Link>
 
               <Link
                 to="#"
                 title=""
-                className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-semibold text-black transition-all duration-200 bg-transparent border border-black rounded-md sm:w-auto hover:bg-black hover:text-white focus:bg-black focus:text-white"
+                className="inline-flex w-full items-center justify-center rounded-md border border-white/20 bg-transparent px-8 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-white/10 focus:bg-white/10 sm:w-auto"
                 role="button"
               >
                 <svg
-                  className="w-5 h-5 mr-2 -ml-1"
+                  className="mr-2 -ml-1 h-5 w-5"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -47,17 +46,6 @@ const Cta = ({titre, projects, contactButton, myContact}) => {
                 {myContact}
               </Link>
             </div>
-
-            {/* <p className="mt-6 text-base text-black">
-              Already have an account?{" "}
-              <a
-                href="#"
-                title=""
-                className="text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
-              >
-                Log in
-              </a>
-            </p> */}
           </div>
         </div>
       </section>
