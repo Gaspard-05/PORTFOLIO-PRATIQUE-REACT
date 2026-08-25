@@ -2,24 +2,17 @@ import MyStoryimg from "../assets/img/icon-story.png";
 
 const MyStory = ({titre, description}) => {
   return (
-    <div className="border-b border-grey-lighter py-16  lg:py-20">
-            <div className="flex items-center pb-6">
-              <img src={MyStoryimg} alt="icon story" />
-              <h3
-                className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white"
-              >
-                {titre}
-              </h3>
-            </div>
-            <div>
-              <p className="font-body font-light text-primary dark:text-white">
-                {description}
-              </p>
-            </div>
-    </div>
-
-
-        
+    <section className="px-2 pt-6 pb-10 sm:px-6 sm:pt-8 sm:pb-16 lg:px-8 lg:pt-12 lg:pb-24 xl:px-0">
+      <div className="mx-auto max-w-7xl overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl backdrop-blur-sm sm:rounded-3xl sm:p-10 lg:p-14">
+        <div className="flex items-center gap-3 pb-6">
+          <img src={MyStoryimg} alt="icon story" />
+          <h3 className="font-body text-2xl font-semibold text-white">
+            {titre}
+          </h3>
+        </div>
+        <p className="font-body font-light text-gray-300">{description}</p>
+      </div>
+    </section>
   );
 }
 

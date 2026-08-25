@@ -8,8 +8,8 @@ const HeroBanner = ({
 }) => {
   return (
     <>
-      <section className="px-2 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
-        <div className="mx-auto max-w-6xl overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-xl backdrop-blur-sm sm:rounded-3xl">
+      <section className="px-2 pt-6 pb-10 sm:px-6 sm:pt-8 sm:pb-16 lg:px-8 lg:pt-12 lg:pb-24 xl:px-0">
+        <div className="mx-auto max-w-7xl overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-xl backdrop-blur-sm sm:rounded-3xl">
           <div className="grid grid-cols-1 items-center gap-8 p-6 sm:p-10 md:grid-cols-2 md:gap-10 lg:p-14">
             <div className="text-left">
               {badge && (

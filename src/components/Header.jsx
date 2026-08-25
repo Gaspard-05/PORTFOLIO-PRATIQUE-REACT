@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-50 w-full border-b border-white bg-[#072344] px-2 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-4 lg:py-6 mx-auto max-w-6xl">
+        <div className="flex items-center justify-between py-4 lg:py-6 mx-auto max-w-7xl">
           <Link to="/" className="flex items-center">
             {/* <span className="mr-2">
               <img src={MyStoryimg} alt="logo" />
