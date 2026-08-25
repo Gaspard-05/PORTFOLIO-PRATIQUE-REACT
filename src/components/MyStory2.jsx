@@ -3,7 +3,7 @@ import MyStoryimg from "../assets/img/icon-story.png";
 const MyStory2 = ({titre, posts, category, description, date, time}) => {
   return (
     <>
-      <div className="mx-auto w-screen max-w-screen-xl py-16 lg:py-20">
+      <div className="mx-auto w-full max-w-screen-xl py-16 lg:py-20">
         <div className="flex items-center pb-6">
           <img src={MyStoryimg} alt="icon story" />
           <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">

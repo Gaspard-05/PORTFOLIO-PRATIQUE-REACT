@@ -1,40 +1,55 @@
-const HeroBanner = ({title, description, startButton, learnMoreButton, imageUrl}) => {
+const HeroBanner = ({
+  badge = "Portfolio",
+  title,
+  description,
+  startButton,
+  learnMoreButton,
+  imageUrl,
+}) => {
   return (
     <>
-      <section className="lg:grid lg:min-h-screen lg:place-content-center ">
-        <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 md:grid md:grid-cols-2 md:items-center md:gap-4 lg:px-8 lg:py-32">
-          <div className="max-w-prose text-left">
-            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl dark:text-white">
-              {title}
-            </h1>
+      <section className="px-2 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
+        <div className="mx-auto max-w-6xl overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-xl backdrop-blur-sm sm:rounded-3xl">
+          <div className="grid grid-cols-1 items-center gap-8 p-6 sm:p-10 md:grid-cols-2 md:gap-10 lg:p-14">
+            <div className="text-left">
+              {badge && (
+                <span className="inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-white">
+                  {badge}
+                </span>
+              )}
 
-            <p className="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed dark:text-gray-200">
-              {description}
-            </p>
+              <h1 className="mt-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+                {title}
+              </h1>
 
-            <div className="mt-4 flex gap-4 sm:mt-6">
-              <a
-                className="inline-block rounded border border-indigo-600 bg-indigo-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-indigo-700"
-                href="#"
-              >
-                {startButton}
-              </a>
+              <p className="mt-4 text-base text-pretty text-gray-300 sm:text-lg/relaxed">
+                {description}
+              </p>
 
-              <a
-                className="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
-                href="#"
-              >
-                {learnMoreButton}
-              </a>
+              <div className="mt-6 flex flex-wrap gap-4">
+                <a
+                  className="inline-block rounded border border-indigo-600 bg-indigo-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-indigo-700"
+                  href="#"
+                >
+                  {startButton}
+                </a>
+
+                <a
+                  className="inline-block rounded border border-white/20 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-white/10"
+                  href="#"
+                >
+                  {learnMoreButton}
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div className="mt-6 md:mt-0 sm:p-10">
-            <img
-              className="w-full h-auto max-w-full rounded-lg object-cover md:h-[400px] lg:h-[500px]"
-              src={imageUrl}
-              alt="Any Image Here"
-            />
+            <div>
+              <img
+                className="h-64 w-full rounded-xl object-cover sm:h-80 md:h-[360px] lg:h-[420px]"
+                src={imageUrl}
+                alt="Any Image Here"
+              />
+            </div>
           </div>
         </div>
       </section>

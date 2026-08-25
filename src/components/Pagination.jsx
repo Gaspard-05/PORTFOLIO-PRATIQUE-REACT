@@ -1,7 +1,7 @@
 const Pagination = () => {
   return (
     <>
-      <div className="mx-auto w-screen max-w-screen-xl flex pt-8 lg:pt-16">
+      <div className="mx-auto w-full max-w-screen-xl flex pt-8 lg:pt-16">
         <span className="cursor-pointer border-2 border-secondary px-3 py-1 font-body font-medium text-secondary">
           1
         </span>
