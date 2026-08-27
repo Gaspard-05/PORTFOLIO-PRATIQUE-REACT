@@ -1,22 +1,22 @@
 const Pagination = () => {
   return (
-    <>
-      <div className="mx-auto w-full max-w-screen-xl flex pt-8 lg:pt-16">
-        <span className="cursor-pointer border-2 border-secondary px-3 py-1 font-body font-medium text-secondary">
+    <section className="py-6 sm:py-8 lg:py-10">
+      <div className="flex flex-wrap items-center justify-center gap-3 overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 shadow-xl backdrop-blur-sm sm:justify-start sm:gap-4 sm:rounded-3xl sm:p-6">
+        <span className="cursor-pointer rounded-md border-2 border-secondary px-3 py-1 font-body font-medium text-secondary">
           1
         </span>
-        <span className="ml-3 cursor-pointer border-2 border-primary px-3 py-1 font-body font-medium text-primary transition-colors hover:border-secondary hover:text-secondary dark:border-green-light dark:text-white dark:hover:border-secondary dark:hover:text-secondary">
+        <span className="cursor-pointer rounded-md border-2 border-white/20 px-3 py-1 font-body font-medium text-white transition-colors hover:border-secondary hover:text-secondary">
           2
         </span>
-        <span className="ml-3 cursor-pointer border-2 border-primary px-3 py-1 font-body font-medium text-primary transition-colors hover:border-secondary hover:text-secondary dark:border-green-light dark:text-white dark:hover:border-secondary dark:hover:text-secondary">
+        <span className="cursor-pointer rounded-md border-2 border-white/20 px-3 py-1 font-body font-medium text-white transition-colors hover:border-secondary hover:text-secondary">
           3
         </span>
-        <span className="group ml-3 flex cursor-pointer items-center border-2 border-primary px-3 py-1 font-body font-medium text-primary transition-colors hover:border-secondary hover:text-secondary dark:border-green-light dark:text-white dark:hover:border-secondary dark:hover:text-secondary">
+        <span className="group flex cursor-pointer items-center rounded-md border-2 border-white/20 px-3 py-1 font-body font-medium text-white transition-colors hover:border-secondary hover:text-secondary">
           Next
-          <i className="bx bx-right-arrow-alt ml-1 text-primary transition-colors group-hover:text-secondary dark:text-white"></i>
+          <i className="bx bx-right-arrow-alt ml-1 text-white transition-colors group-hover:text-secondary"></i>
         </span>
       </div>
-    </>
+    </section>
   );
 };
 
